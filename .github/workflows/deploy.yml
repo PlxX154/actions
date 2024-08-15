@@ -9,7 +9,7 @@ jobs:
   build:
     runs-on: ubuntu-latest
 
-   steps:
+    steps:
     - name: Checkout code
       uses: actions/checkout@v3
     
@@ -28,7 +28,7 @@ jobs:
       run: ng test --watch=false --browsers=ChromeHeadless
     
     - name: Build the app
-      run: ng build --prod --base-href "ToDo"
+      run: ng build --prod --base-href "https://PlxX154.github.io/actions/"
 
     
   deploy:
